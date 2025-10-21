@@ -37,9 +37,7 @@ console.log("Customers who bought a mouse:", customersWithMouse);
 
 // CALCULATIONS
 // 1. Get the total sales amount (sum of all totals).
-let getSum = (total, num) => total + num;
-
-const totalSales = orders.map(order => order.total).reduce(getSum, 0);
+const totalSales = orders.reduce((sum, order) => sum + order.total, 0);
 console.log("Total sales amount:", totalSales);
 
 // 2. Check if all orders are completed.
