@@ -37,7 +37,6 @@ function removeFromCart(productId) {
 function getCartTotal() {
     return cart.reduce((total, item) => total + item.totalPrice, 0);
 }
-console.log(getCartTotal());
 
 // 5. Create a function filterByCategory(category)
 //    that returns all products that belong to the given category
