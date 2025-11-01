@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Ecommerce</title>
+</head>
+<body>
+    <header class="w-full px-[100px] pt-4 h-[100px] flex justify-between items-center border-b border-gray-300">
+        <a href="./index.html">
+            <h1 class="inter-bold text-[24px]">Exclusive</h3>
+        </a>
+        <div class="flex items-center gap-[24px]">
+            <div class="flex items-center bg-[#F5F5F5] gap-[32px] rounded-sm px-4">
+                <input type="text" class="focus:outline-none text-[12px] w-full" placeholder="What are you looking for?">
+                <button type="button" class="cursor-pointer">
+                    <img class="w-[32px] h-[32px]" src="./assets/icons/search.svg" alt="search.svg">
+                </button>
+            </div>
+            <div class="flex gap-[16px]">
+                <a href="">
+                    <img class="w-[32px] h-[32px]" src="./assets/icons/cart.svg" alt="cart.svg">
+                </a>
+                <a href="">
+                    <img class="w-[32px] h-[32px]" src="./assets/icons/user.svg" alt="user.svg">
+                </a>
+            </div>
+    </header>
+
+    <main class="px-[100px] py-18 flex flex-col mb-35">
+        <div class="flex flex-col">
+            <div class="flex items-center gap-[10px] mb-5">
+                <div class="w-5 h-10 bg-[#DB4444] rounded-sm"></div>
+                <h4 class="poppins-semibold text-[#DB4444]">Categories</h4>
+            </div>
+            <h2 class="inter-semibold text-[36px] mb-15">Browse By Category</h2>
+            <div class="flex gap-[30px]">
+                <a href="">
+                    <div class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
+                        <img src="./assets/icons/Category-CellPhone.svg" alt="Category-CellPhone.svg">
+                        <h4>Tech</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
+                        <img src="./assets/icons/Category-Computer.svg" alt="Category-Computer.svg">
+                        <h4>Fashion</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
+                        <img src="./assets/icons/Category-SmartWatch.svg" alt="Category-SmartWatch.svg">
+                        <h4>Furniture</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <hr class="mt-30 mb-16 text-black/20">
+
+        <div class="flex flex-col">
+            <div class="flex items-center gap-[10px] mb-5">
+                <div class="w-5 h-10 bg-[#DB4444] rounded-sm"></div>
+                <h4 class="poppins-semibold text-[#DB4444]">Our Products</h4>
+            </div>
+            <h2 class="inter-semibold text-[36px] mb-15">Explore Our Products</h2>
+            <!-- Dynamic products -->
+            <div id="productContainer" class="w-full h-screen grid grid-cols-4 gap-y-15">
+            </div>
+            <div class="flex justify-center mt-15 relative">
+                <button class="w-[180px] h-[55px] bg-[#DB4444] text-white rounded-sm cursor-pointer hover:bg-[#C53D3D]">View More</button>
+                <button class="absolute bottom-4 right-10 cursor-pointer">
+                    <div class="bg-[#F5F5F5] w-[45px] h-[45px] rounded-full flex justify-center items-center hover:bg-[#dcdcdc] transition">
+                    <img src="./assets/icons/arrowup.svg" alt="arrowup.svg">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-22 pt-[230px]">
+            <div class="flex flex-col items-center">
+                <img class="w-[80px] h-[80px] mb-6" src="./assets/icons/truck.svg" alt="truck.svg">
+                <h3 class="poppins-semibold text-[20px] mb-2">FREE AND FAST DELIVERY</h3>
+                <p class="text-[14px]">Free delivery for all orders over $140</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-[80px] h-[80px] mb-6" src="./assets/icons/headphones.svg" alt="headphones.svg">
+                <h3 class="poppins-semibold text-[20px] mb-2">24/7 CUSTOMER SERVICE</h3>
+                <p class="text-[14px]">Friendly 24/7 customer support</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-[80px] h-[80px] mb-6" src="./assets/icons/secure.svg" alt="secure.svg">
+                <h3 class="poppins-semibold text-[20px] mb-2">MONEY BACK GUARANTEE</h3>
+                <p class="text-[14px]">We reurn money within 30 days</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="w-full bg-black text-white pt-[80px] pb-6">
+        <div class="flex justify-between pb-[85px] px-[100px]">
+            <div class="flex flex-col gap-6">
+                <h2 class="text-[24px] poppins-medium">Exclusive</h2>
+                <p class="poppins-medium text-[20px]">Subscribe</p>
+                <p>Get 10% off your first order</p>
+                <div class="w-[215px] flex items-center border border-white rounded-sm overflow-hidden">
+                    <input type="email" placeholder="Enter your email" class="bg-transparent px-3 py-2 w-full focus:outline-none">
+                    <button class="mx-2 cursor-pointer">
+                        <img src="./assets/icons/send.svg" alt="send.svg" class="w-[24px] h-[24px]">
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h2 class="text-[24px] poppins-medium mb-2">Support</h2>
+                <a class="hover:underline" target="_blank" href="https://maps.app.goo.gl/WdDyD86edovcr9Jg7">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</a>
+                <a class="hover:underline" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
+                <a class="hover:underline" href="tel:+88015-88888-9999">+88015-88888-9999</a>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h2 class="text-[24px] poppins-medium mb-2">Account</h2>
+                <a href="" class="hover:underline">My Account</a>
+                <a href="" class="hover:underline">Login / Register</a>
+                <a href="" class="hover:underline">Basket</a>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <h2 class="text-[24px] poppins-medium mb-2">Quick Link</h2>
+                <a href="" class="hover:underline">Privacy Policy</a>
+                <a href="" class="hover:underline">Terms Of Use</a>
+            </div>
+
+            <div class="flex flex-col">
+                <h2 class="text-[24px] poppins-medium mb-6">Download App</h2>
+                <p class="poppins-medium mb-2 text-gray-400 text-[12px]">Save $3 with App New User Only</p>
+                <div class="flex items-center gap-2 mb-4">
+                    <a href=""><img src="./assets/icons/qrcode.svg" alt="qrcode.svg" class="w-[76px] h-[76px]"></a>
+                    <div class="flex flex-col gap-2">
+                        <a href=""><img src="./assets/icons/googleplay.svg" alt="googleplay.svg"></a>
+                        <a href=""><img src="./assets/icons/appstore.svg" alt="appstore.svg"></a>
+                    </div>
+                </div>
+                <div class="flex justify-start gap-6 mt-2">
+                    <a href=""><img src="./assets/icons/facebook.svg" alt="facebook.svg"></a>
+                    <a href=""><img src="./assets/icons/twitter.svg" alt="twitter.svg"></a>
+                    <a href=""><img src="./assets/icons/instagram.svg" alt="instagram.svg"></a>
+                    <a href=""><img src="./assets/icons/linkedin.svg" alt="linkedin.svg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-1 text-[12px] text-[#F9F9F933] pt-4 border-t">
+            <p>&copy; Copyright Rimel 2022. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
