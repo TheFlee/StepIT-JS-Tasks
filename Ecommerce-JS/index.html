@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./script.js"></script>
+    <script defer src="./scripts/homapage.js"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Ecommerce</title>
 </head>
+
 <body>
     <header class="w-full px-[100px] pt-4 h-[100px] flex justify-between items-center border-b border-gray-300">
         <a href="./index.html">
@@ -15,7 +17,8 @@
         </a>
         <div class="flex items-center gap-[24px]">
             <div class="flex items-center bg-[#F5F5F5] gap-[32px] rounded-sm px-4">
-                <input type="text" class="focus:outline-none text-[12px] w-full" placeholder="What are you looking for?">
+                <input type="text" class="focus:outline-none text-[12px] w-full"
+                    placeholder="What are you looking for?">
                 <button type="button" class="cursor-pointer">
                     <img class="w-[32px] h-[32px]" src="./assets/icons/search.svg" alt="search.svg">
                 </button>
@@ -39,26 +42,29 @@
             <h2 class="inter-semibold text-[36px] mb-15">Browse By Category</h2>
             <div class="flex gap-[30px]">
                 <a href="">
-                    <div class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
+                    <div
+                        class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
                         <img src="./assets/icons/Category-CellPhone.svg" alt="Category-CellPhone.svg">
                         <h4>Tech</h4>
                     </div>
                 </a>
                 <a href="">
-                    <div class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
+                    <div
+                        class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
                         <img src="./assets/icons/Category-Computer.svg" alt="Category-Computer.svg">
                         <h4>Fashion</h4>
                     </div>
                 </a>
                 <a href="">
-                    <div class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
+                    <div
+                        class="w-[170px] h-[145px] flex flex-col gap-4 justify-center items-center border border-black/30 rounded-sm hover:bg-[#e5e5e5]">
                         <img src="./assets/icons/Category-SmartWatch.svg" alt="Category-SmartWatch.svg">
                         <h4>Furniture</h4>
                     </div>
                 </a>
             </div>
         </div>
-        
+
         <hr class="mt-30 mb-16 text-black/20">
 
         <div class="flex flex-col">
@@ -71,10 +77,13 @@
             <div id="productContainer" class="w-full h-screen grid grid-cols-4 gap-y-15">
             </div>
             <div class="flex justify-center mt-15 relative">
-                <button class="w-[180px] h-[55px] bg-[#DB4444] text-white rounded-sm cursor-pointer hover:bg-[#C53D3D]">View More</button>
+                <button
+                    class="w-[180px] h-[55px] bg-[#DB4444] text-white rounded-sm cursor-pointer hover:bg-[#C53D3D]">View
+                    More</button>
                 <button class="absolute bottom-4 right-10 cursor-pointer">
-                    <div class="bg-[#F5F5F5] w-[45px] h-[45px] rounded-full flex justify-center items-center hover:bg-[#dcdcdc] transition">
-                    <img src="./assets/icons/arrowup.svg" alt="arrowup.svg">
+                    <div
+                        class="bg-[#F5F5F5] w-[45px] h-[45px] rounded-full flex justify-center items-center hover:bg-[#dcdcdc] transition">
+                        <img src="./assets/icons/arrowup.svg" alt="arrowup.svg">
                     </div>
                 </button>
             </div>
@@ -107,7 +116,8 @@
                 <p class="poppins-medium text-[20px]">Subscribe</p>
                 <p>Get 10% off your first order</p>
                 <div class="w-[215px] flex items-center border border-white rounded-sm overflow-hidden">
-                    <input type="email" placeholder="Enter your email" class="bg-transparent px-3 py-2 w-full focus:outline-none">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-transparent px-3 py-2 w-full focus:outline-none">
                     <button class="mx-2 cursor-pointer">
                         <img src="./assets/icons/send.svg" alt="send.svg" class="w-[24px] h-[24px]">
                     </button>
@@ -116,7 +126,8 @@
 
             <div class="flex flex-col gap-4">
                 <h2 class="text-[24px] poppins-medium mb-2">Support</h2>
-                <a class="hover:underline" target="_blank" href="https://maps.app.goo.gl/WdDyD86edovcr9Jg7">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</a>
+                <a class="hover:underline" target="_blank" href="https://maps.app.goo.gl/WdDyD86edovcr9Jg7">111 Bijoy
+                    sarani, Dhaka, <br> DH 1515, Bangladesh.</a>
                 <a class="hover:underline" href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
                 <a class="hover:underline" href="tel:+88015-88888-9999">+88015-88888-9999</a>
             </div>
@@ -158,4 +169,5 @@
         </div>
     </footer>
 </body>
+
 </html>

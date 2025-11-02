@@ -70,3 +70,26 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark .auth-container {
+  color: #ffffff;
+}
+
+body.dark a {
+  color: #ffffff;
+}
+
+body.dark input {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #666666;
+}
+
+body.dark input::placeholder {
+  color: #aaaaaa;
+}
